@@ -1,0 +1,30 @@
+CREATE TABLE TIPO_PRODUTO (
+    codigo serial not null PRIMARY KEY,
+    nome_tipo varchar(40) not null
+);
+
+CREATE TABLE MARCA (
+    codigo serial not null PRIMARY KEY,
+    nome_marca varchar(40) not null,
+    descricao text 
+);
+
+CREATE TABLE PRODUTO (
+    codigo serial not null PRIMARY KEY,
+    nome_produto varchar(40) not null,
+    preco_custo money not null,
+    preco_venda money not null,
+    quantidade int not null,
+    descricao text not null,
+    unidade decimal(3,2) not null,
+    validade date,
+   cod_tipo int not null,
+   cod_marca int not null,
+   CONSTRAINT FK_PRODUTO_1 FOREIGN KEY (cod_tipo)
+   REFERENCES TIPO_PRODUTO (codigo),
+   CONSTRAINT FK_PRODUTO_2 FOREIGN KEY (cod_marca)
+   REFERENCES MARCA (codigo)
+);
+
+
+ 
