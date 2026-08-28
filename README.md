@@ -28,7 +28,7 @@ servir como material de estudo de alunos iniciantes.
 3. Execute o script. Ele apaga e recria as tabelas do projeto.
 4. Abra `Mostruario/App.config` e localize a conexão `MostruarioDb`.
 5. Troque `ALTERE_AQUI` pela senha do usuário PostgreSQL instalado no computador.
-6. Se necessário, ajuste também a porta. O exemplo usa a porta `15432`.
+6. Se necessário, ajuste também a porta. O exemplo usa a porta padrão `5432`.
 
 > Não envie a senha real do seu computador para o repositório.
 
