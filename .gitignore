@@ -1,0 +1,17 @@
+# Arquivos gerados pelo Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+
+# Pacotes são restaurados pelo NuGet
+packages/
+
+# Arquivos locais do usuário
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Resultados temporários de compilação
+TestResults/
+*.pdb
